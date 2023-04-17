@@ -32,15 +32,15 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Dipanshu_021:ad8920@cluster0.f7migc1.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://W9Uyj61afEXSw601:W9Uyj61afEXSw601@cluster0.zsxso.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', '0_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001953206885))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'shortnflyhelp_bot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "Flase")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [𝙁𝙞𝙡𝙢 𝙐𝙥𝙙𝙖𝙩𝙚 𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡](https://t.me/film_update_official)</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i>{file_caption}</i>\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [𝙁𝙞𝙡𝙢 𝙐𝙥𝙙𝙖𝙩𝙚 𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡](https://t.me/Film_Update_Official)</b> ↭  🔥")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
@@ -50,8 +50,8 @@ SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
-PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), False)
+MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "n")), True)
+PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "n")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 #LazyRenamer Configs
@@ -74,9 +74,9 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE', 'infinitetech-')  # WITHOUT @ [  
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+aOeF8jIjuP82N2Nl") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE", "False")), False)
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '3e3ea22a23eecb70d24ab987ccdc596efb72f9a8')
+URL_MODE = is_enabled((environ.get("URL_MODE", "y")), False)
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'flashlink.in') #Always use website url from api section 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'f83fccf13f976f443c234e9990aeea7d56135284')
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 
 # Auto Delete For Group Message (Self Delete) #
