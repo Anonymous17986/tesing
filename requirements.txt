@@ -16,3 +16,13 @@ aiofiles
 dnspython
 pynewtonmath
 openai
+cinemagoer
+asyncio
+speedtest
+googletrans==3.1.0a0
+gtts
+psutil
+
+
+
+
